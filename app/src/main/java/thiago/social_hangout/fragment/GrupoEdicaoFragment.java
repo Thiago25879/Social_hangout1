@@ -74,7 +74,7 @@ public class GrupoEdicaoFragment extends BaseFragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(view.getId() == R.id.btedicaogrupo){
+                if(view.getId() == R.id.button_novogrupo){
                     grupo.nome = editText.getText().toString();
                     grupo.foto = editText.getText().toString();
                     new Task().execute(SAVE);
@@ -98,11 +98,11 @@ public class GrupoEdicaoFragment extends BaseFragment {
 
     private class Task extends AsyncTask<String, Void, Long>{
 
-        @Override
+        /*@Override
         protected void onPreExecute() {
             super.onPreExecute();
             alertWait("Aguarde", "Processando.....");
-        }
+        }*/
 
         @Override
         protected Long doInBackground(String... strings) {

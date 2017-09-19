@@ -111,7 +111,7 @@ public class GrupoServiceBD extends SQLiteOpenHelper {
                 return sqLiteDatabase.insert("grupo", null, values);
             }else{
                 values.put("_id", grupo.id);
-                return sqLiteDatabase.update("grupo", values, "_id" + grupo.id, null);
+                return sqLiteDatabase.update("grupo", values, "_id=" + grupo.id, null);
             }
         }finally {
             sqLiteDatabase.close();
