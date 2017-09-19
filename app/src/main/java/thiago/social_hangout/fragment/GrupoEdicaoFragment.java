@@ -70,7 +70,7 @@ public class GrupoEdicaoFragment extends BaseFragment {
                 }
             });
 
-        button1 = (Button) view.findViewById(R.id.btedicaogrupo);
+        button1 = (Button) view.findViewById(R.id.button_novogrupo);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
