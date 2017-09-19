@@ -111,7 +111,7 @@ public class GrupoEdicaoFragment extends BaseFragment {
             }else if(strings[0].equals(DELETE)){
                 return grupoServiceBD.delete(grupo);
             }
-            return null;
+            return 0L;
         }
 
         @Override
