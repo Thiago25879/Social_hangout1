@@ -76,7 +76,6 @@ public class GrupoEdicaoFragment extends BaseFragment {
             public void onClick(View view) {
                 if(view.getId() == R.id.button_novogrupo){
                     grupo.nome = editText.getText().toString();
-                    grupo.foto = editText.getText().toString();
                     new Task().execute(SAVE);
                 }
             }
